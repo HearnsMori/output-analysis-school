@@ -4,7 +4,7 @@ This project simulates an **M/M/1 queueing system** (Arrival rate $\lambda = 0.8
 
 Because simulations often begin in an unrepresentative state (e.g., an empty queue), these methods are critical for removing initialization bias ("warm-up" period) and accounting for autocorrelation.
 
-## 📊 Analyzed Methods
+## Methods Used
 
 1. **Welch Method**: Averages across multiple initial replications, applies a moving average window, and visualizes where the transient phase transitions into steady-state stability.
 2. **Replication-Deletion**: Deletes a fixed percentage (20%) of the initial warm-up data from independent replications to establish an unbiased grand mean.
@@ -12,7 +12,7 @@ Because simulations often begin in an unrepresentative state (e.g., an empty que
 
 ---
 
-## 🚀 Setup & Installation
+## Clone & Pip Installation & Running
 
 ### 1. Clone
 Ensure you have Python 3.8+ installed, then run:
@@ -23,3 +23,7 @@ pip install -r requirements.txt
 ```bash
 python output_analysis.py
 ```
+
+## More
+### Image Generation
+Once the code runs it generate the images of each methods used
